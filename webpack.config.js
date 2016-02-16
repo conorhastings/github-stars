@@ -19,7 +19,7 @@ module.exports = {
 			{
 				test: /\.js?$/,
 				loader: require.resolve('babel-loader'),
-				include: path.join(__dirname, 'src'),
+				include: [path.join(__dirname, 'src'), path.join(__dirname, 'lib')],
 				exclude: path.join(__dirname, 'node_modules')
 			}
 		]
